@@ -10,6 +10,17 @@ namespace teh5
     {
         static void Main(string[] args)
         {
+            double sekunti, minuutti, tunti;
+
+            Console.Write("Anna sekunnit > ");
+            sekunti = double.Parse(Console.ReadLine());
+
+            minuutti = sekunti / 60;
+            tunti = minuutti / 60;
+
+            Console.WriteLine("Aika sekuntiena: " + sekunti);
+            Console.WriteLine("Aika minuutteina: " + minuutti);
+            Console.WriteLine("Aika tunteina: " + tunti);
         }
     }
 }
